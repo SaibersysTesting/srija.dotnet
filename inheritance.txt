@@ -1,0 +1,58 @@
+INHERITANCE
+-----------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication4
+{
+    public class Program
+    {
+        public string firstname;
+        public string lastname;
+        public string email;
+        public void Display()
+        {
+            Console.WriteLine("name  : " +firstname + "." + lastname);
+            Console.WriteLine("email address : " + email);
+
+        }
+    }
+        public class Fulltime_employe : Program
+        {
+             public float yearlysalary;
+
+        }
+        public class Parttime_employe :Program
+        {
+             public float hourlysalary;
+        }
+
+
+        public class Mainclass
+        {
+            public static void Main()
+            {
+                Fulltime_employe fte = new Fulltime_employe();
+
+                fte.firstname = "srija";
+                fte.lastname = "n";
+                fte.email = "sri.n1";
+                fte.yearlysalary = 70000;
+                fte.Display();
+                Console.WriteLine("yearly salary :" + fte.yearlysalary);
+
+                Parttime_employe pte = new Parttime_employe();
+                pte.firstname = "seeta";
+                pte.lastname = "r";
+                pte.email = "seeta.r1";
+                pte.hourlysalary = 100000;             
+                pte.Display();
+                Console.WriteLine("hourly salary :" + pte.hourlysalary);
+                Console.ReadLine();
+           
+            }
+        }
+    }

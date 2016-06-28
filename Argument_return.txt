@@ -1,0 +1,125 @@
+
+NO ARGUMENTS, NO RETURN TYPE
+-----------------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        public void Employe()
+        {
+       int eno =100;
+       string ename="rama";
+       double esalary=6000;
+
+     
+            Console.WriteLine("employe num=" + eno);
+            Console.WriteLine("employe name=" + ename);
+            Console.WriteLine("employe salary=" + esalary);
+            Console.ReadLine();
+          
+       }
+
+        static void Main(string[] args)
+        {
+            Program obj = new Program();
+            obj.Employe();
+
+            
+
+        }
+
+        
+    }
+}
+
+WITH ARGUMENT,NO RETURN TYPE
+----------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication2
+{
+    class Program1
+    {
+
+        public int eno;
+        public string ename;
+        public double esalary;
+        public void Employe(int x, string y, double z)
+        {
+            eno = x;
+             ename = y;
+             esalary = z;
+        }
+        public void display()
+        {
+            Console.WriteLine("employe num=" + eno);
+            Console.WriteLine("employe name=" + ename);
+            Console.WriteLine("employe salary=" + esalary);
+            Console.ReadLine();
+
+        }
+
+         public static void Main(string[] args)
+        {
+            Program1 obj = new Program1();
+            obj.Employe(100, "rama", 1000.5);
+            obj.display();
+
+
+        }
+    }
+}
+ 
+
+WITH ARGUMENT,WITH RETURN
+--------------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication2
+{
+    class Program3
+    {
+        public int a,b,c;
+      
+        public  int sum(int x,int y)
+        {
+             a= x;
+             b = y;
+             c = x + y;
+             return c;
+        }
+        public void display()
+        {
+            Console.WriteLine("employe num=" + a);
+            Console.WriteLine("employe name=" + b);
+            Console.WriteLine("employe salary=" + c);
+            Console.ReadLine();
+
+        }
+
+        public static void Main(string[] args)
+        {
+            Program3 obj = new Program3();
+            obj.sum(12, 13);
+            obj.display();
+
+
+        }
+    }
+}

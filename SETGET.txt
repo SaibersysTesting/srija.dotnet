@@ -1,0 +1,65 @@
+
+SETTER AND GETTER
+--------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+    class Employe
+    {
+
+        private int eno;
+        private string ename;
+        private double esalary;
+
+        public void seteno(int eno)
+    {
+        this.eno = eno;
+    }
+        public int geteno()
+        {
+            return this.eno;
+        }
+        public void setename(string ename)
+        {
+            this.ename = ename;
+        }
+        public string getename()
+        {
+            return this.ename;
+        }
+        public void setesalary(double esalary)
+        {
+            this.esalary = esalary;
+        }
+        public double getesalary()
+        {
+            return this.esalary;
+        }
+    }
+
+    class  Mainclass
+    {
+        public static void Main(string[] args)
+        {
+
+            Employe obj = new Employe();
+            obj.seteno(100);
+            obj.setename("rama");
+            obj.setesalary(5000.5);
+
+            Console.WriteLine("the employe number is:" +obj.geteno());
+            Console.WriteLine("the employe name is:" + obj.getename());
+            Console.WriteLine("the employe salary is:" + obj.getesalary());
+
+            Console.ReadLine();
+            
+
+
+        }
+    }
+}

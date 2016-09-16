@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Websevice", "Websevice\Websevice.csproj", "{8A5AF86F-1924-430F-AB30-3418360BCF27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hellowebclient", "Hellowebclient\Hellowebclient.csproj", "{AC959C56-F96C-47DC-93D2-2345C604BDEF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8A5AF86F-1924-430F-AB30-3418360BCF27} = {8A5AF86F-1924-430F-AB30-3418360BCF27}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A5AF86F-1924-430F-AB30-3418360BCF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A5AF86F-1924-430F-AB30-3418360BCF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A5AF86F-1924-430F-AB30-3418360BCF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A5AF86F-1924-430F-AB30-3418360BCF27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC959C56-F96C-47DC-93D2-2345C604BDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC959C56-F96C-47DC-93D2-2345C604BDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC959C56-F96C-47DC-93D2-2345C604BDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC959C56-F96C-47DC-93D2-2345C604BDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
